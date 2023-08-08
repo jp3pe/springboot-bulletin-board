@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        :root {
+            --clien-top-nav-grey-color: #394452;
+            --clien-top-nav-background-color: #232F3E;
+            --top-nav-link-border-color: #37475A;
+            --top-nav-link-border-width: 0.1em;
+            --top-nav-height: 3.667em;
+        }
+
+        #top-nav {
+            height: var(--top-nav-height);
+            width: 100%;
+            background-color: var(--clien-top-nav-background-color);
+            color: white;
+            font-size: 0.8em;
+        }
+
+        #top-nav > * {
+            margin: 0 1em;
+        }
+
+        #top-nav > *:first-child {
+            font-size: 2em;
+            flex-grow: 1;
+        }
+
+        #top-nav > *:nth-child(3) {
+            flex-grow: 13;
+        }
+
+        #top-nav > *:nth-child(4) {
+            flex-grow: 0;
+        }
+
+        #top-nav a {
+            color: inherit;
+            align-items: center;
+        }
+
+        #top-nav li {
+            height: 100%;
+            padding: 0 2.5em;
+            border-right: var(--top-nav-link-border-width) solid var(--top-nav-link-border-color);
+        }
+
+        #top-nav li:first-child {
+            border-left: var(--top-nav-link-border-width) solid var(--top-nav-link-border-color);
+        }
+
+        #search-input-container {
+            height: inherit;
+        }
+
+        #search-input-container input {
+            height: 2em;
+            background-color: var(--clien-top-nav-grey-color);
+            padding: 0 0.5em;
+        }
+
+        #search-input-container input, #search-input-container input::placeholder {
+            color: white;
+        }
+
+        #search-input-container label {
+            border-radius: 50%;
+            border: 0.1em solid var(--clien-top-nav-grey-color);
+        }
+
+        #search-input-container button {
+            background-color: var(--clien-top-nav-grey-color);
+        }
+
+        #search-input-container button > span {
+            color: white;
+            background-color: var(--clien-top-nav-grey-color);
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+<nav class="flexbox-container" id="top-nav">
+    <a class="flexbox-container" href="#">CLI&eacute;N</a>
+    <ul class="flexbox-container">
+        <li class="flexbox-container flexbox-container-center"><a href="#">톺아보기</a></li>
+        <li class="flexbox-container flexbox-container-center"><a href="#">공감글</a></li>
+        <li class="flexbox-container flexbox-container-center"><a href="#">추천글</a></li>
+    </ul>
+    <div class="flexbox-container"></div>
+    <div class="flexbox-container flexbox-container-center" id="search-input-container">
+        <label class="flexbox-container">
+            <input placeholder="검색어를 입력하세요.">
+            <button>
+                <span class="fa fa-search"></span>
+            </button>
+        </label>
+    </div>
+</nav>
+</body>
+</html>
