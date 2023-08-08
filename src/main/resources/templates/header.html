@@ -3,51 +3,51 @@
 <head>
     <style>
         :root {
-            --clien-top-nav-grey-color: #394452;
-            --clien-top-nav-background-color: #232F3E;
-            --top-nav-link-border-color: #37475A;
-            --top-nav-link-border-width: 0.1em;
-            --top-nav-height: 3.667em;
+            --clien-header-grey-color: #394452;
+            --clien-header-background-color: #232F3E;
+            --header-link-border-color: #37475A;
+            --header-link-border-width: 0.1em;
+            --header-height: 3.667em;
         }
 
-        #top-nav {
-            height: var(--top-nav-height);
+        header {
+            height: var(--header-height);
             width: 100%;
-            background-color: var(--clien-top-nav-background-color);
+            background-color: var(--clien-header-background-color);
             color: white;
             font-size: 0.8em;
         }
 
-        #top-nav > * {
+        header > * {
             margin: 0 1em;
         }
 
-        #top-nav > *:first-child {
+        header > *:first-child {
             font-size: 2em;
             flex-grow: 1;
         }
 
-        #top-nav > *:nth-child(3) {
+        header > *:nth-child(3) {
             flex-grow: 13;
         }
 
-        #top-nav > *:nth-child(4) {
+        header > *:nth-child(4) {
             flex-grow: 0;
         }
 
-        #top-nav a {
+        header a {
             color: inherit;
             align-items: center;
         }
 
-        #top-nav li {
+        header li {
             height: 100%;
             padding: 0 2.5em;
-            border-right: var(--top-nav-link-border-width) solid var(--top-nav-link-border-color);
+            border-right: var(--header-link-border-width) solid var(--header-link-border-color);
         }
 
-        #top-nav li:first-child {
-            border-left: var(--top-nav-link-border-width) solid var(--top-nav-link-border-color);
+        header li:first-child {
+            border-left: var(--header-link-border-width) solid var(--header-link-border-color);
         }
 
         #search-input-container {
@@ -56,7 +56,7 @@
 
         #search-input-container input {
             height: 2em;
-            background-color: var(--clien-top-nav-grey-color);
+            background-color: var(--clien-header-grey-color);
             padding: 0 0.5em;
         }
 
@@ -66,22 +66,22 @@
 
         #search-input-container label {
             border-radius: 50%;
-            border: 0.1em solid var(--clien-top-nav-grey-color);
+            border: 0.1em solid var(--clien-header-grey-color);
         }
 
         #search-input-container button {
-            background-color: var(--clien-top-nav-grey-color);
+            background-color: var(--clien-header-grey-color);
         }
 
         #search-input-container button > span {
             color: white;
-            background-color: var(--clien-top-nav-grey-color);
+            background-color: var(--clien-header-grey-color);
             font-size: 1em;
         }
     </style>
 </head>
 <body>
-<nav class="flexbox-container" id="top-nav">
+<header class="flexbox-container">
     <a class="flexbox-container" href="#">CLI&eacute;N</a>
     <ul class="flexbox-container">
         <li class="flexbox-container flexbox-container-center"><a href="#">톺아보기</a></li>
@@ -97,6 +97,6 @@
             </button>
         </label>
     </div>
-</nav>
+</header>
 </body>
 </html>
