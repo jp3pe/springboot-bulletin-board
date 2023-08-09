@@ -7,6 +7,12 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&family=Roboto&display=swap');
 
+        :root {
+            --clien-background-color: #EEEEEE;
+            --clien-blue-color: #CCDFED;
+            --clien-blue-highlight-color: #516B82;
+        }
+
         html {
             font-family: 'Nanum Gothic', 'Noto Sans KR', 'Roboto', sans-serif;
             font-weight: 500;
@@ -24,6 +30,7 @@
         /*Disable default CSS styles*/
         body {
             margin: 0;
+            background-color: var(--clien-background-color);
         }
 
         a {
@@ -38,6 +45,10 @@
             outline: none;
         }
 
+        section {
+            background-color: white;
+        }
+
         ul {
             padding: 0;
             list-style-type: none;
@@ -46,5 +57,6 @@
 </head>
 <body>
 <header th:replace="~{header}"></header>
+<nav th:replace="~{nav}"></nav>
 </body>
 </html>
