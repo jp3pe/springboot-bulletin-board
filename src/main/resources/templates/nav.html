@@ -3,10 +3,12 @@
 <head>
     <style>
         :root {
-            --nav-group-all-color: #F1F1F1;
-            --nav-group-item-vertical-padding-width: 0.833em;
-            --nav-group-item-horizional-padding-height: 0.417em;
-            --nav-small-group-background-color: #71A064;
+            --nav-community-first-child-background-color: #516B82;
+            --nav-group-show-merge-background-color: #F1F1F1;
+            --nav-item-vertical-padding-width: 0.833em;
+            --nav-item-horizional-padding-height: 0.417em;
+            --nav-small-group-first-child-background-color: #71A064;
+            --nav-community-margin-bottom-height: 0.833em;
         }
 
         nav {
@@ -17,39 +19,24 @@
         }
 
         nav a {
-            padding: var(--nav-group-item-horizional-padding-height) var(--nav-group-item-vertical-padding-width);
+            padding: var(--nav-item-horizional-padding-height) var(--nav-item-vertical-padding-width);
         }
 
         #community {
-            display: flex;
-            flex-direction: column;
+            margin-bottom: var(--nav-community-margin-bottom-height);
         }
 
         #community > article {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
         }
 
-        #community-all {
-            background-color: var(--clien-blue-highlight-color);
+        #community > article:first-child {
+            background-color: var(--nav-community-first-child-background-color);
         }
 
-        .community-group-all {
-            background-color: var(--nav-group-all-color);
-        }
-
-        .group-all {
+        #community > article:first-child, #small-group > article:first-child {
             color: white;
-        }
-
-        #small-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        #small-group-all {
-            background-color: var(--nav-small-group-background-color);
         }
 
         #small-group > article {
@@ -57,21 +44,38 @@
             flex-direction: column;
         }
 
-        .nav-icon {
+        #small-group > article:first-child {
+            background-color: var(--nav-small-group-first-child-background-color);
+        }
+
+        article.community-show-merge, article.small-group-show-merge {
+            background-color: var(--nav-group-show-merge-background-color);
+        }
+
+        article > a:has(span.nav-icon) {
+            display: flex;
+        }
+
+        span.nav-icon {
+            margin-right: 0.5em;
             border: 1px solid rgba(0, 0, 0, 0.05);
-            background-color: var(--nav-group-all-color);
+            background-color: var(--nav-group-show-merge-background-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 1em;
         }
     </style>
 </head>
 <body>
 <nav>
     <section id="community">
-        <article class="group-all" id="community-all">
+        <article>
             <a>
                 <span>커뮤니티</span>
             </a>
         </article>
-        <article class="community-group-all">
+        <article class="community-show-merge">
             <a href="#">
                 <span class="nav-icon">C</span>
                 <span>모두의 광장</span>
@@ -91,7 +95,7 @@
                 <span>아무거나 질문</span>
             </a>
         </article>
-        <article class="community-group-all">
+        <article class="community-show-merge">
             <a href="#">
                 <span class="nav-icon">D</span>
                 <span>정보와 자료</span>
@@ -111,7 +115,7 @@
                 <span>자료실</span>
             </a>
         </article>
-        <article class="community-group-all">
+        <article class="community-show-merge">
             <a href="#">
                 <span class="nav-icon">E</span>
                 <span>강좌/사용기</span>
@@ -131,7 +135,7 @@
                 <span>체험단 사용기</span>
             </a>
         </article>
-        <article class="community-group-all">
+        <article class="community-show-merge">
             <a href="#">
                 <span class="nav-icon">W</span>
                 <span>사고팔고</span>
@@ -159,12 +163,12 @@
         </article>
     </section>
     <section id="small-group">
-        <article class="group-all" id="small-group-all">
+        <article>
             <a>
                 <span>소모임</span>
             </a>
         </article>
-        <article class="small-group">
+        <article class="small-group-show-merge">
             <a href="#">
                 <span>소모임 전체</span>
             </a>
