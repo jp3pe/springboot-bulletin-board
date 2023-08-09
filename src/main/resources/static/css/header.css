@@ -1,0 +1,77 @@
+:root {
+    --clien-header-grey-color: #394452;
+    --clien-header-background-color: #232F3E;
+    --header-link-border-color: #37475A;
+    --header-link-border-width: 0.1em;
+    --header-height: 3.667em;
+}
+
+header {
+    height: var(--header-height);
+    width: 100%;
+    margin-bottom: 1em;
+    background-color: var(--clien-header-background-color);
+    color: white;
+    font-size: 0.8em;
+}
+
+header > * {
+    margin: 0 1em;
+}
+
+header > *:first-child {
+    font-size: 2em;
+    flex-grow: 1;
+}
+
+header > *:nth-child(3) {
+    flex-grow: 13;
+}
+
+header > *:nth-child(4) {
+    flex-grow: 0;
+}
+
+header a {
+    color: inherit;
+    align-items: center;
+}
+
+header li {
+    height: 100%;
+    padding: 0 2.5em;
+    border-right: var(--header-link-border-width) solid var(--header-link-border-color);
+}
+
+header li:first-child {
+    border-left: var(--header-link-border-width) solid var(--header-link-border-color);
+}
+
+#search-input-container {
+    height: inherit;
+}
+
+#search-input-container input {
+    height: 2em;
+    background-color: var(--clien-header-grey-color);
+    padding: 0 0.5em;
+}
+
+#search-input-container input, #search-input-container input::placeholder {
+    color: white;
+}
+
+#search-input-container label {
+    border-radius: 50%;
+    border: 0.1em solid var(--clien-header-grey-color);
+}
+
+#search-input-container button {
+    background-color: var(--clien-header-grey-color);
+}
+
+#search-input-container button > span {
+    color: white;
+    background-color: var(--clien-header-grey-color);
+    font-size: 1em;
+}
