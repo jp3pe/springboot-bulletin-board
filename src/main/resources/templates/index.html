@@ -6,45 +6,13 @@
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/996a0504f3.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&family=Roboto&display=swap');
-
-        html {
-            font-family: 'Nanum Gothic', 'Noto Sans KR', 'Roboto', sans-serif;
-            font-weight: 500;
-        }
-
-        .flexbox-container {
-            display: flex;
-        }
-
-        .flexbox-container-center {
-            justify-content: center;
-            align-items: center;
-        }
-
-        /*Disable default CSS styles*/
-        body {
-            margin: 0;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        button, input {
-            border: 0;
-        }
-
-        input:focus, input:focus-visible {
-            outline: none;
-        }
-
-        ul {
-            padding: 0;
-            list-style-type: none;
-        }
+        @import url("/css/index.css");
+        @import url("/css/header.css");
+        @import url("/css/nav.css");
     </style>
 </head>
 <body>
-<nav th:replace="~{top-nav}"></nav>
+<header th:replace="~{header}"></header>
+<nav th:replace="~{nav}"></nav>
 </body>
 </html>
