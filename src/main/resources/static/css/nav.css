@@ -48,11 +48,11 @@ article.community-show-merge, article.small-group-show-merge {
     background-color: var(--nav-group-show-merge-background-color);
 }
 
-article.community-show-merge a, article.small-group-show-merge a{
+article.community-show-merge a, article.small-group-show-merge a {
     color: #111;
 }
 
-article.community-group a, article.small-group a, #small-group-etc a{
+article.community-group a, article.small-group a, #small-group-etc a {
     color: #222;
 }
 
