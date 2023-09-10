@@ -7,14 +7,14 @@
     --nav-community-margin-bottom-height: 0.833em;
 }
 
-nav {
+#left-nav {
     margin-left: 1em;
     font-size: 0.8em;
     max-width: 11em;
     flex-grow: 1;
 }
 
-nav a {
+#left-nav a {
     padding: var(--nav-item-horizional-padding-height) var(--nav-item-vertical-padding-width);
 }
 
