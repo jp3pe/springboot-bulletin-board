@@ -9,9 +9,9 @@
 
 nav {
     margin-left: 1em;
-    margin-right: 1em;
     font-size: 0.8em;
     max-width: 11em;
+    flex-grow: 1;
 }
 
 nav a {

@@ -1,0 +1,7 @@
+#content-board {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1.25em 1.917em 5em;
+    background-color: white;
+    flex-grow: 6;
+}
