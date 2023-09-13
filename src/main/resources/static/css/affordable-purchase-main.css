@@ -10,6 +10,10 @@
     align-items: center;
 }
 
+.affordable-purchase-post > div {
+    flex-basis: 0;
+}
+
 .affordable-purchase-post > .post {
     display: flex;
     flex-direction: column;
@@ -23,6 +27,11 @@
 
 .affordable-purchase-post > .image {
     flex-grow: 70;
+}
+
+.affordable-purchase-post > .image > img {
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .affordable-purchase-post > .author {
