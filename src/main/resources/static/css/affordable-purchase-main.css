@@ -1,0 +1,38 @@
+.affordable-purchase-post {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.affordable-purchase-post > div:not(:first-child) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.affordable-purchase-post > .post {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 524;
+}
+
+.affordable-purchase-post > .post > div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.affordable-purchase-post > .image {
+    flex-grow: 70;
+}
+
+.affordable-purchase-post > .author {
+    flex-grow: 95;
+}
+
+.affordable-purchase-post > .view-count {
+    flex-grow: 60;
+}
+
+.affordable-purchase-post > .created-time {
+    flex-grow: 60;
+}
