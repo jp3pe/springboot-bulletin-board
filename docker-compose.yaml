@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  db:
+    build:
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    ports:
+      - "3306:3306"
+    volumes:
+      - "./db:/var/lib/mysql"
