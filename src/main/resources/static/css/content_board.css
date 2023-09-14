@@ -25,3 +25,24 @@
 #content-board-user > a:first-child {
     border: none;
 }
+
+#view-by-category {
+    display: flex;
+    justify-content: space-between;
+}
+
+#view-by-category > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1.7em;
+    margin-left: 0.3em;
+    background-color: #CCDFED;
+    font-size: 0.8em;
+    color: black;
+}
+
+#view-by-category > a:first-child {
+    margin-left: 0;
+}
