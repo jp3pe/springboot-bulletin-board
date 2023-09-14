@@ -1,0 +1,27 @@
+#content-board {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1.25em 1.917em 5em;
+    background-color: white;
+    flex-grow: 6;
+}
+
+#content-board-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#content-board-title {
+    display: flex;
+    align-items: center;
+}
+
+#content-board-user > a {
+    padding: 0 0.2em;
+    border-left: 1px solid grey;
+}
+
+#content-board-user > a:first-child {
+    border: none;
+}

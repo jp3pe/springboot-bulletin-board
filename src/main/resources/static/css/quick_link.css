@@ -1,0 +1,18 @@
+#quick-link {
+    display: flex;
+    height: 2.833em;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FAFAFA;
+}
+
+.quick-link-item {
+    width: 100%;
+    padding-left: 0.5em;
+    font-size: 0.8em;
+    border-left: 1px solid grey;
+}
+
+.quick-link-item:first-child {
+    border: none;
+}
