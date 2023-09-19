@@ -1,5 +1,9 @@
 create user 'web' IDENTIFIED BY 'qwer1234!@#$';
-grant delete, insert, select, update on clien.* to `web`;
+grant delete
+, insert,
+select,
+update, create
+on clien.* to `web`;
 
 create table post
 (
