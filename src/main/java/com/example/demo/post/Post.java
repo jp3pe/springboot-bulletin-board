@@ -6,7 +6,7 @@ import org.springframework.data.annotation.CreatedDate;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name = "post2")
+@Table(name = "post")
 public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
