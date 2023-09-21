@@ -47,3 +47,18 @@ ul {
 #wrapper {
     justify-content: space-between;
 }
+
+#wrapper > nav:first-child {
+    flex-basis: 0;
+    flex-grow: 145;
+}
+
+#wrapper > div:nth-child(2) {
+    flex-basis: 0;
+    flex-grow: 858;
+}
+
+#wrapper > div:nth-child(3) {
+    flex-basis: 0;
+    flex-grow: 180;
+}
