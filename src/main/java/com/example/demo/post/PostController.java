@@ -1,19 +1,24 @@
 package com.example.demo.post;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 @RestController
-@RequestMapping("/post")
+@RequestMapping("/")
 public class PostController {
-    //    TODO: Avoid field injection
-    @Autowired
-    private PostRepository postRepository;
+    private final PostService postService;
 
-    @GetMapping
-    public Iterable<Post> getPosts() {
-        return postRepository.findAll();
+    public PostController(PostService postService) {
+        this.postService = postService;
+    }
+
+    @GetMapping("/")
+    ModelAndView home() {
+        ModelAndView modelAndView = new ModelAndView("index");
+        modelAndView.addObject("posts", postService.findAll());
+
+        return modelAndView;
     }
 }
