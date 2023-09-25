@@ -1,0 +1,27 @@
+footer {
+    background-color: var(--clien-background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 3.333em 0;
+}
+
+#legal-info {
+    display: flex;
+    justify-content: center;
+}
+
+#legal-info > a {
+    color: grey;
+    margin: 0 0.3em;
+    text-decoration: underline;
+    font-size: 0.7em;
+}
+
+footer > div:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+footer > div:last-child > p {
+    font-size: 0.7em;
+}
