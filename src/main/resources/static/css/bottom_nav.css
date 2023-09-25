@@ -1,0 +1,29 @@
+#bottom-nav {
+    width: 60%;
+    min-height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+#bottom-nav div:first-child > a {
+    margin-right: 0.5em;
+    padding-right: 1em;
+    border-right: 1px solid black;
+    color: black;
+}
+
+#bottom-nav > div:first-child > a:last-child {
+    border: 0;
+}
+
+#bottom-nav > div:nth-child(2) {
+    min-width: 10.833em;
+    border: 1px solid black;
+}
+
+#bottom-nav > div:nth-child(2) > a {
+    padding: 0.667em 0.833em;
+    width: inherit;
+}
