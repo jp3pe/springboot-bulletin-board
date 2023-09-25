@@ -13,14 +13,18 @@
         @import url("/css/quick_link.css");
         @import url("/css/login_form.css");
         @import url("/css/affordable-purchase-main.css");
+        @import url("/css/bottom_nav.css");
     </style>
 </head>
 <body>
 <header th:replace="~{header}"></header>
-<div class="flexbox-container" id="wrapper">
+<div class="flexbox-container" id="middle">
     <nav th:replace="~{nav}"></nav>
     <div th:replace="~{content_board}"></div>
     <div th:replace="~{login_form}"></div>
+</div>
+<div id="bottom">
+    <div th:replace="~{bottom_nav}"></div>
 </div>
 </body>
 </html>

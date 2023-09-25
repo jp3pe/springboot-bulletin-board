@@ -44,21 +44,28 @@ ul {
     list-style-type: none;
 }
 
-#wrapper {
+#middle {
     justify-content: space-between;
 }
 
-#wrapper > nav:first-child {
+#middle > nav:first-child {
     flex-basis: 0;
     flex-grow: 145;
 }
 
-#wrapper > div:nth-child(2) {
+#middle > div:nth-child(2) {
     flex-basis: 0;
     flex-grow: 858;
 }
 
-#wrapper > div:nth-child(3) {
+#middle > div:nth-child(3) {
     flex-basis: 0;
     flex-grow: 180;
+}
+
+#bottom {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
 }
