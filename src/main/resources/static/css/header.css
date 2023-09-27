@@ -9,6 +9,9 @@
 header {
     height: var(--header-height);
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 1em;
     background-color: var(--clien-header-background-color);
     color: white;
@@ -30,6 +33,18 @@ header > *:nth-child(3) {
 
 header > *:nth-child(4) {
     flex-grow: 0;
+}
+
+header > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header a {

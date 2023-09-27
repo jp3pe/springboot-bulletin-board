@@ -8,15 +8,6 @@ html {
     font-weight: 500;
 }
 
-.flexbox-container {
-    display: flex;
-}
-
-.flexbox-container-center {
-    justify-content: center;
-    align-items: center;
-}
-
 /*Disable default CSS styles*/
 body {
     margin: 0;
@@ -45,6 +36,7 @@ ul {
 }
 
 #middle {
+    display: flex;
     justify-content: space-between;
 }
 
