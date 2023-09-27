@@ -14,9 +14,9 @@ public class PostController {
         this.postService = postService;
     }
 
-    @GetMapping("/")
-    ModelAndView home() {
-        ModelAndView modelAndView = new ModelAndView("index");
+    @GetMapping({"/", "/list"})
+    ModelAndView list() {
+        ModelAndView modelAndView = new ModelAndView("list");
         modelAndView.addObject("posts", postService.findAll());
 
         return modelAndView;
