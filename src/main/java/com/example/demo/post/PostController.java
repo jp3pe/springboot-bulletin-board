@@ -21,4 +21,9 @@ public class PostController {
 
         return modelAndView;
     }
+
+    @GetMapping("/create")
+    ModelAndView create() {
+        return new ModelAndView("create");
+    }
 }
