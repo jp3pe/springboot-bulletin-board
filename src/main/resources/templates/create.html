@@ -9,12 +9,19 @@
         @import url("/css/common.css");
         @import url("/css/create.css");
         @import url("/css/header.css");
+        @import url("/css/create.css");
+        @import url("/css/editor.css");
+        @import url("/css/editor_external_content.css");
         @import url("/css/bottom_nav.css");
         @import url("/css/footer.css");
     </style>
 </head>
 <body>
 <header th:replace="~{header}"></header>
+<main>
+    <div th:replace="~{editor}"></div>
+    <div th:replace="~{editor_external_content}"></div>
+</main>
 <div id="bottom">
     <div th:replace="~{bottom_nav}"></div>
     <footer th:replace="~{footer}"></footer>
