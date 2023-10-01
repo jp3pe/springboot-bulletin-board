@@ -1,0 +1,53 @@
+<div id="editor-external">
+    <p>이미지 게시 방식</p>
+    <label for="image-location"></label>
+    <select id="image-location" name="image publishing method">
+        <option value="insert-in-body">본문 내 삽입</option>
+        <option value="top-of-the-body">본문 상단</option>
+        <option value="bottom-of-the-body">본문 하단</option>
+    </select>
+    <hr>
+    <div>
+        <p>이미지 삽입</p>
+        <div>
+            <button id="image-dropzone">여기에 이미지를 드롭하거나 클릭하세요.</button>
+        </div>
+        <p>최대 업로드 이미지 <strong>20개</strong>/이미지 최대 업로드 용량 <strong>15MB</strong>/업로드 가능 확장자
+            <strong>jpg,gif,png,jpeg</strong></p>
+    </div>
+    <hr>
+    <div>
+        <p>외부 이미지 및 비디오 삽입</p>
+        <div class="external-container">
+            <label>이미지</label>
+            <input placeholder="https://"/>
+            <button>추가</button>
+        </div>
+        <p>이미지 파일(JPG,GIF,PNG,JPEG,WEBP)의 주소를 입력한 후 추가 버튼을 누르면 본문에 삽입됩니다.</p>
+        <div class="external-container">
+            <label>비디오</label>
+            <input placeholder="https://url.mp4"/>
+            <button>추가</button>
+        </div>
+        <p>비디오 파일(.MP4)의 주소를 입력한 후 추가 버튼을 누르면 비디오 태그가 본문에 삽입됩니다.</p>
+    </div>
+    <hr>
+    <div>
+        <p>출처</p>
+        <input id="source">
+    </div>
+    <p>링크를 추가 시 https:// 또는 http://를 포함하여야 합니다.</p>
+    <hr>
+    <div>
+        <p>CCL</p>
+        <select id="ccl-check" name="ccl-check">
+            <option value="do-not-use-ccl">CCL 사용안함</option>
+            <option value="use-ccl">CCL 사용</option>
+        </select>
+    </div>
+    <hr>
+    <div id="conform-button-container">
+        <button>쓰기</button>
+        <button>취소</button>
+    </div>
+</div>

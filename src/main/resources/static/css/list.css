@@ -1,0 +1,32 @@
+section {
+    background-color: white;
+}
+
+#middle {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+#middle > nav:first-child {
+    flex-basis: 0;
+    flex-grow: 145;
+}
+
+#middle > div:nth-child(2) {
+    flex-basis: 0;
+    flex-grow: 858;
+}
+
+#middle > div:nth-child(3) {
+    flex-basis: 0;
+    flex-grow: 180;
+}
+
+#bottom {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+}
